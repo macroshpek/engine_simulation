@@ -33,7 +33,6 @@ double TestBench::engineSimulation(Engine& engine)
         T_engine += (engine.getEngineHeatingRate() + engine.getEngineCoolingRate(T_environment, T_engine)) * timeStep;
 
         elapsedTime += timeStep;
-        std::cout << T_engine << "\t" << elapsedTime << "\t" << engine.V << std::endl;
 
     }
     return elapsedTime;
